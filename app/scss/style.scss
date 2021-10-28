@@ -20,12 +20,12 @@
 
 .top {
   min-height: 333px;
-  background-image: url('../images/top-bg.webp');
+  background-image: url("../images/top-bg.webp");
 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  
+
   &__buttons {
     display: flex;
     justify-content: flex-end;
@@ -46,7 +46,7 @@
       height: 96px;
     }
   }
-  
+
   &__footer {
     display: flex;
     justify-content: center;
@@ -74,7 +74,7 @@
     &::before {
       content: "";
       position: absolute;
-      background-image: url('../images/barbarian.webp');
+      background-image: url("../images/barbarian.webp");
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
@@ -90,19 +90,124 @@
 
 .hero {
   padding-top: 60px;
+  margin-bottom: 114px;
   &__title {
     font-size: 26px;
     line-height: 30px;
     font-weight: 700;
     color: #e1e1e1;
-    margin-bottom: 37px;
+    margin-bottom: 30px;
+    text-align: center;
   }
-  
+  &__text {
+    text-align: center;
+    max-width: 200px;
+    margin: 0 auto 95px;
+    z-index: 100;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 331px;
+      height: 73px;
+      top: 17px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-image: url("../images/banner.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+  }
+  &__footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 }
 
+.soon {
+  &__inner {
+  }
+  &__image {
+    margin: 0 auto 19px;
+  }
+  &__text {
+    margin-bottom: 13px;
+    text-align: center;
+  }
 
+  &__button {
+    display: block;
+    padding: 6px 67px;
+    margin: 0 auto 13px;
+    background: linear-gradient(
+      87.42deg,
+      #405de6 0%,
+      #5851db 8.33%,
+      #833ab4 32.5%,
+      #c13584 64.87%,
+      #e1306c 81.41%,
+      #fd1d1d 99.18%
+    );
+    border-radius: 10px;
 
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 40px;
+    color: #dedede;
 
+    &.grad-2 {
+      background: linear-gradient(92.78deg, #ff0000 2.02%, #282828 101.64%);
+      margin-bottom: 24px;
+    }
+  }
+  &__info {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    color: #c6c6c6;
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+}
 
+.apps {
+  margin-bottom: 205px;
+  &__text {
+    text-align: center;
+    margin-bottom: 26px;
+  }
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    a {
+      width: 135px;
+    }
+    a + a {
+      margin-left: 11px;
+    }
+  }
+}
+
+.footer {
+  padding-bottom: 10px;
+  &__copy {
+    text-align: center;
+    font-size: 10px;
+    line-height: 12px;
+    margin-bottom: 5px;
+  }
+  &__text {
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    color: #c4c4c4;
+    text-align: center;
+  }
+}
 
 @import "media";
