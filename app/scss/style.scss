@@ -4,7 +4,54 @@
 @import "global";
 @import "libs";
 
+.header {
+  background-color: #181818;
+  &__inner {
+    height: 67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  img {
+    width: 206px;
+    height: 56px;
+  }
+}
 
+.top {
+  min-height: 333px;
+  background-image: url('../images/top-bg.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  
+  &__buttons {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 11px;
+    margin-bottom: 27px;
+    a + a {
+      margin-left: 12px;
+    }
+    a {
+      width: 135px;
+      height: 40px;
+    }
+  }
+  &__logo {
+    margin-bottom: 56px;
+    img {
+      width: 354px;
+      height: 96px;
+    }
+  }
+  
+  &__footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
 
 
 
