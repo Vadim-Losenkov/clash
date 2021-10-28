@@ -63,7 +63,7 @@
     border-radius: 5px;
     min-height: 340px;
     padding: 24px 15px;
-    font-size: 12px !important;
+    font-size: 12px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -88,6 +88,17 @@
   }
 }
 
+.hero {
+  padding-top: 60px;
+  &__title {
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #e1e1e1;
+    margin-bottom: 37px;
+  }
+  
+}
 
 
 

@@ -1,6 +1,6 @@
 .container {
-  max-width: 390px;
-  padding: 0 15px;
+  max-width: 380px;
+  padding: 0 10px;
   margin: 0 auto;
 }
 
@@ -20,6 +20,12 @@ button {
 body {
   overflow-x: hidden;
   min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 12px !important;
+  background-color: #222;
+  line-height: 18px;
+  color: #e1e1e1;
 }
 
 .wrapper {
@@ -146,6 +152,50 @@ a {
   display: flex;
   justify-content: center;
   width: 100%;
+}
+
+.barbarian {
+  background-color: #181818;
+  padding-top: 52px;
+  padding-bottom: 36px;
+}
+.barbarian__inner {
+  background-color: #222;
+  border-radius: 5px;
+  min-height: 340px;
+  padding: 24px 15px;
+  font-size: 12px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 100;
+}
+.barbarian__inner::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/barbarian.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 269px;
+  height: 255px;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+
+.hero {
+  padding-top: 60px;
+}
+.hero__title {
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #e1e1e1;
+  margin-bottom: 37px;
 }
 
 /*# sourceMappingURL=style.min.css.map */
