@@ -21,6 +21,7 @@
 .top {
   min-height: 333px;
   background-image: url('../images/top-bg.webp');
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -53,7 +54,39 @@
   }
 }
 
+.barbarian {
+  background-color: #181818;
+  padding-top: 52px;
+  padding-bottom: 36px;
+  &__inner {
+    background-color: #222;
+    border-radius: 5px;
+    min-height: 340px;
+    padding: 24px 15px;
+    font-size: 12px !important;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 100;
 
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url('../images/barbarian.webp');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 269px;
+      height: 255px;
+      top: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 100;
+    }
+  }
+}
 
 
 
